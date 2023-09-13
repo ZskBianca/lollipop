@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Spin Wheel </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    </head> 
+ <body>
+    
+    <div class="container">
+        <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="https://www.bucuria.ro/"> Home </a></li>
+                <li> <a href="images/308206647_401826975454853_5224305805957493022_n.jpg">Lollipops</a> </li>
+                <li> <a href="https://www.magicianafit.ro/retete/deserturi-sanatoase"> Healthy </a></li>
+            </ul>
+        </nav>
+             </div>
+             <div class="row">
+                <div class="col">
+                    <h1>Lick the Lollipops</h1>
+                    <a href="https://giphy.com/embed/X7PBXkS9IKsTjlvt02"> <button class="catbutton"> SHOW ME </button></a>
+            </div>
+             </div>
+            
+             <div class="container1">
+                <div class="spinBTn"> Spin </div> 
+                <div class="clicker"></div>
+                   <div class="wheel">
+                       <div class="number" style="--i:1;--clr:#db7093;">
+                       <span>lick an onion</span></div>
+                       <div class="number" style="--i:2;--clr:#daa520;">
+                           <span>lick a lollipop</span></div>
+                           <div class="number" style="--i:3;--clr:#db7093;">
+                               <span>lick an onion</span></div>
+                               <div class="number" style="--i:4;--clr:#db7093;">
+                                   <span>lick an onion</span></div>
+                                   <div class="number" style="--i:5;--clr:#db7093;">
+                                       <span>lick an onion</span></div>
+                                       <div class="number" style="--i:6;--clr:#db7093;">
+                                           <span>lick an onion</span></div>
+                                           <div class="number" style="--i:7;--clr:#db7093;">
+                                           <span>lick an onion</span></div>
+                                           <div class="number" style="--i:8;--clr:#db7093;">
+                                           <span>lick an onion</span></div>
+                   </div>
+                
+               </div>
+               
+      </div>
+    <script>
+        let wheel = document.querySelector ('.wheel');
+        let spinBTn = document.querySelector('.spinBTn');
+        let value = math.ceil (math.random () *3600);
+       spinBTn.onclick =function () {
+            wheel.style.transform = "rotate("+ value +"deg)";
+            value += math.ceil(math.random () *3600);
+        }
+    </script>
+
+</body>
+</html>
